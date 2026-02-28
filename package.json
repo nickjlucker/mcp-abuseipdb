@@ -1,0 +1,45 @@
+{
+  "name": "mcp-abuseipdb",
+  "version": "0.1.0",
+  "description": "MCP server for AbuseIPDB API - Check IP reputation and abuse reports",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "abuseipdb",
+    "ip-reputation",
+    "threat-intelligence",
+    "security",
+    "abuse-detection"
+  ],
+  "license": "MIT",
+  "author": "Nick Lucker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickjlucker/mcp-abuseipdb"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-abuseipdb": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
